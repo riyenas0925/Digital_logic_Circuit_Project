@@ -1,0 +1,77 @@
+NDB006
+The number of symbol table entries is: 13
+The length of the symbol table is: 277
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|fulladder:1|
+<	|fulladder:1|halfadder:1|
+V	|fulladder:1|halfadder:2|
+p	|fulladder:4|
+~	|fulladder:4|halfadder:1|
+":	|fulladder:4|halfadder:2|
+"T	|fulladder:3|
+"b	|fulladder:3|halfadder:1|
+"|	|fulladder:3|halfadder:2|
+#8	|fulladder:2|
+#F	|fulladder:2|halfadder:1|
+#`	|fulladder:2|halfadder:2|
+
+The number of name info structs is : 53
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	Ky&|	!	5	*	+	,	-	.	A0	w
+#	Ky&|	!	4	*	,	-	.	A1	v
+$	Ky&|	!	3	*	-	.	A2	u
+%	Ky&|	!	2	*	.	A3	t
+&	Ky&|	!	5	*	+	,	-	.	B0	{
+'	Ky&|	!	4	*	,	-	.	B1	z
+(	Ky&|	!	3	*	-	.	B2	y
+)	Ky&|	!	2	*	.	B3	x
+*	XUi[	!	3	1	1	CARRY	s
++	IGdq	!	SUM0	r
+,	IGdq	!	SUM1	q
+-	XUi[	!	3	1	1	SUM2	p
+.	NLG+	!	9	SUM3	o
+/	IVOQ	.	0	:8	"Y
+0	INu}	.	/	Cout	"Y
+1	IVOQ	<	4	:3	"c
+2	IVOQ	<	3	:4	"d
+3	INu}	<	2	Carry	"d
+4	INu}	<	1	SUM	"c
+5	IVOQ	V	8	:3	"n
+6	IVOQ	V	7	:4	"o
+7	INu}	V	6	Carry	"o
+8	INu}	V	5	SUM	"n
+9	IVOQ	#8	:	:8	#u
+:	INu}	#8	9	Cout	#u
+;	IVOQ	#F	>	:3	#~
+<	IVOQ	#F	=	:4	$!
+=	INu}	#F	<	Carry	$!
+>	INu}	#F	;	SUM	#~
+?	IVOQ	#`	B	:3	$*
+@	IVOQ	#`	A	:4	$+
+A	INu}	#`	@	Carry	$+
+B	INu}	#`	?	SUM	$*
+C	IVOQ	"T	D	:8	#M
+D	INu}	"T	C	Cout	#M
+E	IVOQ	"b	H	:3	#V
+F	IVOQ	"b	G	:4	#W
+G	INu}	"b	F	Carry	#W
+H	INu}	"b	E	SUM	#V
+I	IVOQ	"|	L	:3	#`
+J	IVOQ	"|	K	:4	#a
+K	INu}	"|	J	Carry	#a
+L	INu}	"|	I	SUM	#`
+M	IVOQ	p	N	:8	#%
+N	INu}	p	M	Cout	#%
+O	IVOQ	~	R	:3	#.
+P	IVOQ	~	Q	:4	#/
+Q	INu}	~	P	Carry	#/
+R	INu}	~	O	SUM	#.
+S	IVOQ	":	V	:3	#8
+T	IVOQ	":	U	:4	#9
+U	INu}	":	T	Carry	#9
+V	INu}	":	S	SUM	#8

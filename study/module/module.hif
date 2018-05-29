@@ -24,30 +24,23 @@ HIF003
 --
 FILES
 {
-	74163.tdf
+	halfadder.gdf
 	{
-		74163 [USE_LPM_FOR_AHDL_OPERATORS,DEVICE_FAMILY] [aglobal.inc]
+		halfadder [] []
 		{
-			2 [USE_LPM_FOR_AHDL_OPERATORS=OFF,DEVICE_FAMILY=MAX7000] [A,QA,QB,QC,QD,B,C,D,ENT,ENP,CLK,CLRN,LDN];
+			2 [] [];
 		}
 	}
-	7493.gdf
+	fulladder.gdf
 	{
-		7493 [] []
+		fulladder [] []
 		{
 			1 [] [];
 		}
 	}
-	p74163.gdf
+	module.gdf
 	{
-		p74163 [] []
-		{
-			3 [] [];
-		}
-	}
-	4_bit_counter.gdf
-	{
-		4_bit_counter [] []
+		module [] []
 		{
 			0 [] [];
 		}
@@ -55,11 +48,27 @@ FILES
 }
 TREE
 {
-	4_bit_counter::(0,0):(0): 4_bit_counter.gdf
+	module::(0,0):(0): module.gdf
 	{
-		74163::(0,0):(14): 74163.tdf
+		fulladder::(0,0):(4): fulladder.gdf
 		{
-			p74163:3:(35,3):(41,sub): p74163.gdf;
+			halfadder:2:(0,0):(1): halfadder.gdf;
+			halfadder:2:(0,0):(2): halfadder.gdf;
+		}
+		fulladder::(0,0):(3): fulladder.gdf
+		{
+			halfadder:2:(0,0):(1): halfadder.gdf;
+			halfadder:2:(0,0):(2): halfadder.gdf;
+		}
+		fulladder::(0,0):(2): fulladder.gdf
+		{
+			halfadder:2:(0,0):(1): halfadder.gdf;
+			halfadder:2:(0,0):(2): halfadder.gdf;
+		}
+		fulladder::(0,0):(1): fulladder.gdf
+		{
+			halfadder:2:(0,0):(1): halfadder.gdf;
+			halfadder:2:(0,0):(2): halfadder.gdf;
 		}
 	}
 }

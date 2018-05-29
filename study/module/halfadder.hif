@@ -24,42 +24,8 @@ HIF003
 --
 FILES
 {
-	74163.tdf
-	{
-		74163 [USE_LPM_FOR_AHDL_OPERATORS,DEVICE_FAMILY] [aglobal.inc]
-		{
-			2 [USE_LPM_FOR_AHDL_OPERATORS=OFF,DEVICE_FAMILY=MAX7000] [A,QA,QB,QC,QD,B,C,D,ENT,ENP,CLK,CLRN,LDN];
-		}
-	}
-	7493.gdf
-	{
-		7493 [] []
-		{
-			1 [] [];
-		}
-	}
-	p74163.gdf
-	{
-		p74163 [] []
-		{
-			3 [] [];
-		}
-	}
-	4_bit_counter.gdf
-	{
-		4_bit_counter [] []
-		{
-			0 [] [];
-		}
-	}
 }
 TREE
 {
-	4_bit_counter::(0,0):(0): 4_bit_counter.gdf
-	{
-		74163::(0,0):(14): 74163.tdf
-		{
-			p74163:3:(35,3):(41,sub): p74163.gdf;
-		}
-	}
+	halfadder::(0,0):(0): halfadder.gdf;
 }

@@ -24,30 +24,23 @@ HIF003
 --
 FILES
 {
-	74163.tdf
+	decoder24.gdf
 	{
-		74163 [USE_LPM_FOR_AHDL_OPERATORS,DEVICE_FAMILY] [aglobal.inc]
+		decoder24 [] []
 		{
-			2 [USE_LPM_FOR_AHDL_OPERATORS=OFF,DEVICE_FAMILY=MAX7000] [A,QA,QB,QC,QD,B,C,D,ENT,ENP,CLK,CLRN,LDN];
+			2 [] [];
 		}
 	}
-	7493.gdf
+	decoder38.gdf
 	{
-		7493 [] []
+		decoder38 [] []
 		{
 			1 [] [];
 		}
 	}
-	p74163.gdf
+	module_decoder.gdf
 	{
-		p74163 [] []
-		{
-			3 [] [];
-		}
-	}
-	4_bit_counter.gdf
-	{
-		4_bit_counter [] []
+		module_decoder [] []
 		{
 			0 [] [];
 		}
@@ -55,11 +48,14 @@ FILES
 }
 TREE
 {
-	4_bit_counter::(0,0):(0): 4_bit_counter.gdf
+	module_decoder::(0,0):(0): module_decoder.gdf
 	{
-		74163::(0,0):(14): 74163.tdf
+		decoder38::(0,0):(5): decoder38.gdf
 		{
-			p74163:3:(35,3):(41,sub): p74163.gdf;
+			decoder24:2:(0,0):(2): decoder24.gdf;
+			decoder24:2:(0,0):(1): decoder24.gdf;
 		}
+		decoder38::(0,0):(4): decoder38.gdf;
+		decoder38::(0,0):(1): decoder38.gdf;
 	}
 }
