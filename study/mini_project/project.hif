@@ -24,23 +24,16 @@ HIF003
 --
 FILES
 {
-	decoder38.gdf
+	7476.gdf
 	{
-		decoder38 [] []
+		7476 [] []
 		{
 			1 [] [];
 		}
 	}
-	decoder24.gdf
+	project.gdf
 	{
-		decoder24 [] []
-		{
-			2 [] [];
-		}
-	}
-	module_decoder.gdf
-	{
-		module_decoder [] []
+		project [] []
 		{
 			0 [] [];
 		}
@@ -48,14 +41,8 @@ FILES
 }
 TREE
 {
-	module_decoder::(0,0):(0): module_decoder.gdf
+	project::(0,0):(0): project.gdf
 	{
-		decoder38::(0,0):(1): decoder38.gdf;
-		decoder38::(0,0):(4): decoder38.gdf;
-		decoder38::(0,0):(5): decoder38.gdf
-		{
-			decoder24:2:(0,0):(1): decoder24.gdf;
-			decoder24:2:(0,0):(2): decoder24.gdf;
-		}
+		7476::(0,0):(1): 7476.gdf;
 	}
 }
