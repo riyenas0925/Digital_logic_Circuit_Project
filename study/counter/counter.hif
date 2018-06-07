@@ -24,9 +24,9 @@ HIF003
 --
 FILES
 {
-	project.gdf
+	counter.gdf
 	{
-		project [] []
+		counter [] []
 		{
 			0 [] [];
 		}
@@ -34,8 +34,5 @@ FILES
 }
 TREE
 {
-	project::(0,0):(0): project.gdf
-	{
-		7474::(0,0):(50): 7474.gdf;
-	}
+	counter::(0,0):(0): counter.gdf;
 }
