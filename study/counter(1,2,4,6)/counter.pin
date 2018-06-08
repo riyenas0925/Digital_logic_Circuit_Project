@@ -27,13 +27,13 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 ----------------------------------------------------------------------------
 
-CHIP "project" ASSIGNED TO AN EPM7032LC44-6
-On/Off                           : 1
+CHIP "counter" ASSIGNED TO AN EPM7032LC44-6
+GND                              : 1
 GND                              : 2
 VCC                              : 3
-CLK                              : 4
-Down                             : 5
-Up                               : 6
+RESERVED                         : 4
+RESERVED                         : 5
+RESERVED                         : 6
 RESERVED                         : 7
 RESERVED                         : 8
 RESERVED                         : 9
@@ -66,9 +66,9 @@ VCC                              : 35
 RESERVED                         : 36
 RESERVED                         : 37
 RESERVED                         : 38
-Q2                               : 39
-Q1                               : 40
-Q0                               : 41
+6_CLK                            : 39
+4_CLK                            : 40
+2_CLK                            : 41
 GND                              : 42
-GND                              : 43
+CLK                              : 43
 GND                              : 44

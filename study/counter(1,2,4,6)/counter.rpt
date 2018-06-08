@@ -1,8 +1,8 @@
-Project Information       e:\digital_logic_circuit_project\project\project.rpt
+Project Informatione:\digital_logic_circuit_project\study\counter(1,2,4,6)\counter.rpt
 
 MAX+plus II Compiler Report File
 Version 10.2 07/10/2002
-Compiled: 06/09/2018 01:17:59
+Compiled: 06/08/2018 15:16:37
 
 Copyright (C) 1988-2002 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -36,33 +36,25 @@ needed under any third party's intellectual property, are provided herein.
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-project   EPM7032LC44-6    4        3        0      3       0           9  %
+counter   EPM7032LC44-6    1        3        0      4       1           12 %
 
-User Pins:                 4        3        0  
+User Pins:                 1        3        0  
 
-
-
-Project Information       e:\digital_logic_circuit_project\project\project.rpt
-
-** PROJECT COMPILATION MESSAGES **
-
-Warning: GLOBAL primitive on node 'On/Off' feeds logic -- non-global signal usage may result
-Warning: Ignored unnecessary INPUT pin 'Rotation'
 
 
-Project Information       e:\digital_logic_circuit_project\project\project.rpt
+Project Informatione:\digital_logic_circuit_project\study\counter(1,2,4,6)\counter.rpt
 
 ** AUTO GLOBAL SIGNALS **
 
 
 
-INFO: Signal 'On/Off' chosen for auto global Clear
+INFO: Signal 'CLK' chosen for auto global Clock
 
 
-Device-Specific Information:e:\digital_logic_circuit_project\project\project.rpt
-project
+Device-Specific Information:e:\digital_logic_circuit_project\study\counter(1,2,4,6)\counter.rpt
+counter
 
-***** Logic for device 'project' compiled without errors.
+***** Logic for device 'counter' compiled without errors.
 
 
 
@@ -73,17 +65,17 @@ Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
 
-                                               
-                                               
-                             O                 
-                             n                 
-                 D           /                 
-                 o  C  V  G  O  G  G  G        
-              U  w  L  C  N  f  N  N  N  Q  Q  
-              p  n  K  C  D  f  D  D  D  0  1  
+              R  R  R                          
+              E  E  E                          
+              S  S  S                          
+              E  E  E                    2  4  
+              R  R  R                    _  _  
+              V  V  V  V  G  G  G  C  G  C  C  
+              E  E  E  C  N  N  N  L  N  L  L  
+              D  D  D  C  D  D  D  K  D  K  K  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
-RESERVED |  7                                39 | Q2 
+RESERVED |  7                                39 | 6_CLK 
 RESERVED |  8                                38 | RESERVED 
 RESERVED |  9                                37 | RESERVED 
      GND | 10                                36 | RESERVED 
@@ -113,52 +105,49 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 
 
-Device-Specific Information:e:\digital_logic_circuit_project\project\project.rpt
-project
+Device-Specific Information:e:\digital_logic_circuit_project\study\counter(1,2,4,6)\counter.rpt
+counter
 
 ** RESOURCE USAGE **
 
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     0/16(  0%)   3/16( 18%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     3/16( 18%)   3/16( 18%)   0/16(  0%)   7/36( 19%) 
+A:     LC1 - LC16     0/16(  0%)   0/16(  0%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     4/16( 25%)   3/16( 18%)   1/16(  6%)   4/36( 11%) 
 
 
 Total dedicated input pins used:                 1/4      ( 25%)
-Total I/O pins used:                             6/32     ( 18%)
-Total logic cells used:                          3/32     (  9%)
-Total shareable expanders used:                  0/32     (  0%)
-Total Turbo logic cells used:                    3/32     (  9%)
+Total I/O pins used:                             3/32     (  9%)
+Total logic cells used:                          4/32     ( 12%)
+Total shareable expanders used:                  1/32     (  3%)
+Total Turbo logic cells used:                    4/32     ( 12%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  6.66
+Average fan-in:                                  5.00
 Total fan-in:                                    20
 
-Total input pins required:                       4
+Total input pins required:                       1
 Total output pins required:                      3
 Total bidirectional pins required:               0
-Total logic cells required:                      3
-Total flipflops required:                        3
-Total product terms required:                   11
+Total logic cells required:                      4
+Total flipflops required:                        4
+Total product terms required:                   10
 Total logic cells lending parallel expanders:    0
-Total shareable expanders in database:           0
+Total shareable expanders in database:           1
 
 Synthesized logic cells:                         0/  32   (  0%)
 
 
 
-Device-Specific Information:e:\digital_logic_circuit_project\project\project.rpt
-project
+Device-Specific Information:e:\digital_logic_circuit_project\study\counter(1,2,4,6)\counter.rpt
+counter
 
 ** INPUTS **
 
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   4    (1)  (A)      INPUT               0      0   0    0    0    3    0  CLK
-   5    (2)  (A)      INPUT               0      0   0    0    0    3    0  Down
-   1      -   -       INPUT  G            0      0   0    0    0    3    0  On/Off
-   6    (3)  (A)      INPUT               0      0   0    0    0    3    0  Up
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  CLK
 
 
 Code:
@@ -175,17 +164,17 @@ Sections of this Report File for information on which signals' fan-outs are used
 Clock, Clear, Preset, Output Enable, and synchronous Load signals.
 
 
-Device-Specific Information:e:\digital_logic_circuit_project\project\project.rpt
-project
+Device-Specific Information:e:\digital_logic_circuit_project\study\counter(1,2,4,6)\counter.rpt
+counter
 
 ** OUTPUTS **
 
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B         FF      t        0      0   0    4    2    3    0  Q0
-  40     18    B         FF      t        0      0   0    4    3    3    0  Q1
-  39     19    B         FF      t        0      0   0    4    3    2    0  Q2
+  41     17    B         FF   +  t        1      1   0    0    4    3    1  2_CLK
+  40     18    B         FF   +  t        1      1   0    0    4    3    1  4_CLK
+  39     19    B         FF   +  t        1      1   0    0    4    3    1  6_CLK
 
 
 Code:
@@ -197,68 +186,88 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:e:\digital_logic_circuit_project\project\project.rpt
-project
+Device-Specific Information:e:\digital_logic_circuit_project\study\counter(1,2,4,6)\counter.rpt
+counter
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (38)    20    B       TFFE   +  t        1      1   0    0    4    3    1  :6
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:e:\digital_logic_circuit_project\study\counter(1,2,4,6)\counter.rpt
+counter
 
 ** LOGIC CELL INTERCONNECTIONS **
 
 Logic Array Block 'B':
 
-               Logic cells placed in LAB 'B'
-        +----- LC17 Q0
-        | +--- LC18 Q1
-        | | +- LC19 Q2
-        | | | 
-        | | |   Other LABs fed by signals
-        | | |   that feed LAB 'B'
-LC      | | | | A B |     Logic cells that feed LAB 'B':
-LC17 -> * * * | - * | <-- Q0
-LC18 -> * * * | - * | <-- Q1
-LC19 -> - * * | - * | <-- Q2
+                 Logic cells placed in LAB 'B'
+        +------- LC17 2_CLK
+        | +----- LC18 4_CLK
+        | | +--- LC19 6_CLK
+        | | | +- LC20 :6
+        | | | | 
+        | | | |   Other LABs fed by signals
+        | | | |   that feed LAB 'B'
+LC      | | | | | A B |     Logic cells that feed LAB 'B':
+LC17 -> * * * * | - * | <-- 2_CLK
+LC18 -> * * * * | - * | <-- 4_CLK
+LC19 -> * * * * | - * | <-- 6_CLK
+LC20 -> * * * * | - * | <-- :6
 
 Pin
-4    -> * * * | - * | <-- CLK
-5    -> * * * | - * | <-- Down
-1    -> * * * | - * | <-- On/Off
-6    -> * * * | - * | <-- Up
+43   -> - - - - | - - | <-- CLK
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
 - = The logic cell or pin is not an input to the logic cell (or LAB).
 
 
-Device-Specific Information:e:\digital_logic_circuit_project\project\project.rpt
-project
+Device-Specific Information:e:\digital_logic_circuit_project\study\counter(1,2,4,6)\counter.rpt
+counter
 
 ** EQUATIONS **
 
 CLK      : INPUT;
-Down     : INPUT;
-On/Off   : INPUT;
-Up       : INPUT;
 
--- Node name is 'Q0' = ':29' 
--- Equation name is 'Q0', type is output 
- Q0      = TFFE( _EQ001,  _EQ002, GLOBAL( On/Off),  VCC,  VCC);
-  _EQ001 =  Down &  Q0
-         #  Q1 &  Up;
-  _EQ002 =  CLK &  On/Off;
+-- Node name is '2_CLK' = ':1' 
+-- Equation name is '2_CLK', type is output 
+ 2_CLK   = TFFE( 6_CLK, GLOBAL( CLK), !_EQ001,  VCC,  VCC);
+  _EQ001 =  _X001;
+  _X001  = EXP( _LC020 &  2_CLK &  4_CLK &  6_CLK);
 
--- Node name is 'Q1' = ':37' 
--- Equation name is 'Q1', type is output 
- Q1      = DFFE( _EQ003 $  GND,  _EQ004, GLOBAL( On/Off),  VCC,  VCC);
-  _EQ003 =  Down &  Q0 & !Q1
-         # !Q1 &  Q2 &  Up
-         # !Down &  Q1 & !Up;
-  _EQ004 =  CLK &  On/Off;
+-- Node name is '4_CLK' = ':2' 
+-- Equation name is '4_CLK', type is output 
+ 4_CLK   = TFFE( _EQ002, GLOBAL( CLK), !_EQ003,  VCC,  VCC);
+  _EQ002 = !_LC020 &  4_CLK &  6_CLK;
+  _EQ003 =  _X001;
+  _X001  = EXP( _LC020 &  2_CLK &  4_CLK &  6_CLK);
 
--- Node name is 'Q2' = ':39' 
--- Equation name is 'Q2', type is output 
- Q2      = TFFE( _EQ005,  _EQ006, GLOBAL( On/Off),  VCC,  VCC);
-  _EQ005 = !Q0 & !Q1 &  Up
-         #  Down &  Q1
-         #  Down &  Q2;
-  _EQ006 =  CLK &  On/Off;
+-- Node name is '6_CLK' = ':3' 
+-- Equation name is '6_CLK', type is output 
+ 6_CLK   = TFFE( _EQ004, GLOBAL( CLK), !_EQ005,  VCC,  VCC);
+  _EQ004 =  _LC020 &  4_CLK &  6_CLK
+         #  2_CLK & !4_CLK &  6_CLK;
+  _EQ005 =  _X001;
+  _X001  = EXP( _LC020 &  2_CLK &  4_CLK &  6_CLK);
+
+-- Node name is ':6' 
+-- Equation name is '_LC020', type is buried 
+_LC020   = TFFE( VCC, GLOBAL( CLK), !_EQ006,  VCC,  VCC);
+  _EQ006 =  _X001;
+  _X001  = EXP( _LC020 &  2_CLK &  4_CLK &  6_CLK);
 
 
 
@@ -268,7 +277,7 @@ Up       : INPUT;
 
 
 
-Project Information       e:\digital_logic_circuit_project\project\project.rpt
+Project Informatione:\digital_logic_circuit_project\study\counter(1,2,4,6)\counter.rpt
 
 ** COMPILATION SETTINGS & TIMES **
 
@@ -346,15 +355,15 @@ Compilation Times
    Compiler Netlist Extractor             00:00:00
    Database Builder                       00:00:00
    Logic Synthesizer                      00:00:00
-   Partitioner                            00:00:01
+   Partitioner                            00:00:00
    Fitter                                 00:00:00
    Timing SNF Extractor                   00:00:00
    Assembler                              00:00:00
    --------------------------             --------
-   Total Time                             00:00:01
+   Total Time                             00:00:00
 
 
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,095K
+Peak memory allocated during compilation  = 2,936K

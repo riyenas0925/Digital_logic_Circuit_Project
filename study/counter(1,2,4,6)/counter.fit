@@ -1,6 +1,6 @@
 -- MAX+plus II Compiler Fit File      
 -- Version 10.2 07/10/2002            
--- Compiled: 06/09/2018 01:17:59      
+-- Compiled: 06/08/2018 15:16:37      
 
 -- Copyright (C) 1988-2002 Altera Corporation
 -- Any megafunction design, and related net list (encrypted or decrypted),
@@ -22,29 +22,24 @@
 -- their respective licensors.  No other licenses, including any licenses
 -- needed under any third party's intellectual property, are provided herein.
 
-CHIP "project"
+CHIP "counter"
 BEGIN
 
     DEVICE = "EPM7032LC44-6";
 
-    "CLK"                          : INPUT_PIN  = 4      ; -- LC1
-    "Down"                         : INPUT_PIN  = 5      ; -- LC2
-    "On/Off"                       : INPUT_PIN  = 1      ;
-    "Up"                           : INPUT_PIN  = 6      ; -- LC3
-    "Q0"                           : OUTPUT_PIN = 41     ; -- LC17
-    "Q1"                           : OUTPUT_PIN = 40     ; -- LC18
-    "Q2"                           : OUTPUT_PIN = 39     ; -- LC19
+    "CLK"                          : INPUT_PIN  = 43     ;
+    "2_CLK"                        : OUTPUT_PIN = 41     ; -- LC17
+    "4_CLK"                        : OUTPUT_PIN = 40     ; -- LC18
+    "6_CLK"                        : OUTPUT_PIN = 39     ; -- LC19
+    ":6"                           : LOCATION   = LC20   ; -- PIN 38
 
 END;
 
-INTERNAL_INFO "project"
+INTERNAL_INFO "counter"
 BEGIN
 	DEVICE = EPM7032LC44-6;
 	LC17    : LORAX = "G13R0,PA7R0C1";
-	LC18    : LORAX = "G14R0,PA5R0C1";
 	LC19    : LORAX = "G15R0,PA3R0C1";
-	OH34R0P1 : LORAX = "G25R0,PA9R0C1";
-	OH1R0P5 : LORAX = "G44R0,PA19R0C1";
-	OH2R0P6 : LORAX = "G45R0,PA22R0C1";
-	OH0R0P4 : LORAX = "G43R0,PA20R0C1";
+	LC18    : LORAX = "G14R0,PA5R0C1";
+	LC20    : LORAX = "G16R0,PA1R0C1";
 END;

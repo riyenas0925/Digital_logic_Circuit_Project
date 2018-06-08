@@ -1,0 +1,14 @@
+% MAX+plus II 10.2   Date: 06/09/2018 00:58:07 %
+
+Error: Output pinstubs "OUT" (ID :30.OUT) and "OUT" (ID :65.OUT) are tied together
+
+Error: Output pinstubs "OUT" (ID :65.OUT) and "OUT" (ID :30.OUT) are tied together
+
+Error: Output pinstubs "OUT" (ID :32.OUT) and "OUT" (ID :66.OUT) are tied together
+
+Error: Output pinstubs "OUT" (ID :69.OUT) and "OUT" (ID :38.OUT) are tied together
+
+Error: Output pinstubs "OUT" (ID :66.OUT) and "OUT" (ID :32.OUT) are tied together
+
+Error: Output pinstubs "OUT" (ID :38.OUT) and "OUT" (ID :69.OUT) are tied together
+

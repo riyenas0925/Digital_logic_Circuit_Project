@@ -6,23 +6,33 @@ Index Hierarchy Path
 ----- --------------
 !	&null_hpath&
 
-The number of name info structs is : 16
+The number of name info structs is : 26
 
 InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
 -------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
-"	IGdG	!	:29	u
-#	IGdW	!	:30	x
-$	IGdW	!	:31	z
-%	IGdW	!	:32	{
-&	IGdG	!	:37	w
-'	IGdW	!	:38	|
-(	IGdG	!	:39	v
-)	IGdW	!	:40	}
-*	IGdW	!	:47	~
-+	IGdW	!	:56	y
-,	Ky&|	!	3	.	/	0	CLK	q
--	Ky&|	!	3	.	/	0	On/Off	p
-.	Ky&}	!	2	0	.	Q0	r
-/	Ky&}	!	3	.	/	0	Q1	t
-0	Ky&}	!	2	/	0	Q2	s
-1	Ky&|	!	3	.	/	0	Up	o
+"	IGdG	!	:29	w
+#	IGdW	!	:30	~
+$	IGdW	!	:31	{
+%	IGdW	!	:32	"#
+&	IGdG	!	:37	y
+'	IGdW	!	:38	"%
+(	IGdG	!	:39	x
+)	IGdW	!	:40	"&
+*	IGdW	!	:47	"'
++	IGdW	!	:56	"!
+,	IGdW	!	:65	z
+-	IGdW	!	:66	""
+.	IGdW	!	:67	}
+/	IGdW	!	:68	|
+0	IGdW	!	:69	"$
+1	IGdW	!	:74	"(
+2	IGdW	!	:75	"*
+3	IGdW	!	:76	")
+4	Ky&|	!	3	7	8	9	CLK	r
+5	Ky&|	!	3	7	8	9	Down	o
+6	(@>U^	!	3	7	8	9	On/Off	s
+7	Ky&}	!	3	7	8	9	Q0	t
+8	Ky&}	!	3	7	8	9	Q1	u
+9	Ky&}	!	2	8	9	Q2	v
+:	IGdp	!	Rotation	p
+;	Ky&|	!	3	7	8	9	Up	q
