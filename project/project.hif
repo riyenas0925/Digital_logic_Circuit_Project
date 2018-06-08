@@ -34,8 +34,5 @@ FILES
 }
 TREE
 {
-	project::(0,0):(0): project.gdf
-	{
-		7474::(0,0):(50): 7474.gdf;
-	}
+	project::(0,0):(0): project.gdf;
 }
