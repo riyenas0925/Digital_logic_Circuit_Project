@@ -1,65 +1,94 @@
 NDB006
-The number of symbol table entries is: 12
-The length of the symbol table is: 123
+The number of symbol table entries is: 15
+The length of the symbol table is: 153
 
 Index Hierarchy Path
 ----- --------------
 !	&null_hpath&
 .	|7476:21|
-8	|7476:22|
-B	|7408:37|
-L	|7408:62|
-V	|7408:60|
-`	|7408:58|
-j	|7408:25|
-t	|7411:63|
-~	|7432:64|
-"*	|7432:66|
-"4	|7432:65|
+8	|7476:67|
+B	|7476:80|
+L	|7476:22|
+V	|7408:37|
+`	|7408:86|
+j	|7408:62|
+t	|7408:60|
+~	|7408:58|
+"*	|7408:25|
+"4	|7411:63|
+">	|7432:64|
+"H	|7432:66|
+"R	|7432:65|
 
-The number of name info structs is : 42
+The number of name info structs is : 68
 
 InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
 -------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
-"	(@>U^	!	3	%	&	'	CLK	o
-#	Ky&|	!	3	%	&	'	Down	q
-$	(@>U^	!	3	%	&	'	On/Off	r
-%	Ky&}	!	3	%	&	'	Q1	t
-&	Ky&}	!	3	%	&	'	Q2	u
-'	Ky&}	!	2	&	'	Q3	v
-(	IGdp	!	Rotation	p
-)	Ky&|	!	3	%	&	'	Up	s
-*	INu}	j	+	1	#T
-+	IVOQ	j	*	:4	#T
-,	INu}	B	-	1	#3
--	IVOQ	B	,	:4	#3
-.	INu}	`	/	1	#L
-/	IVOQ	`	.	:4	#L
-0	INu}	V	1	1	#D
-1	IVOQ	V	0	:4	#D
-2	INu}	L	3	1	#<
-3	IVOQ	L	2	:4	#<
-4	INu}	t	5	1	#]
-5	IVOQ	t	4	:5	#]
-6	INu}	~	7	1	#f
-7	IVOQ	~	6	:4	#f
-8	INu}	"4	9	1	#w
-9	IVOQ	"4	8	:4	#w
-:	INu}	"*	;	1	#o
-;	IVOQ	"*	:	:4	#o
-<	INum	.	C	1Q	"r
-=	INu}	.	A	1QN	"p
->	INum	.	B	2Q	"q
-?	INu}	.	@	2QN	"o
-@	IVOQ	.	?	:5	"o
-A	IVOQ	.	=	:6	"p
-B	IVOA	.	>	:7	"q
-C	IVOA	.	<	:8	"r
-D	INum	8	K	1Q	#+
-E	INu}	8	I	1QN	#)
-F	INum	8	J	2Q	#*
-G	INu}	8	H	2QN	#(
-H	IVOQ	8	G	:5	#(
-I	IVOQ	8	E	:6	#)
-J	IVOA	8	F	:7	#*
-K	IVOA	8	D	:8	#+
+"	Ky&}	!	6	/	#	$	T	]	"	2CLK	u
+#	Ky&}	!	1	#	4CLK	v
+$	Ky&}	!	1	$	6CLK	y
+%	IGdW	!	:110	#'
+&	IGdW	!	:98	#%
+'	IGdW	!	:99	#&
+(	(@>U^	!	9	+	"	#	0	$	,	-	]	T	CLK	o
+)	Ky&|	!	3	+	,	-	Down	q
+*	(@>U^	!	5	+	,	-	#	$	On/Off	r
++	Ky&}	!	3	+	,	-	Q1	t
+,	Ky&}	!	3	+	,	-	Q2	z
+-	Ky&}	!	2	,	-	Q3	{
+.	IGdp	!	Rotation	p
+/	IGdq	!	tp1	x
+0	Ky&}	!	1	0	tp2	w
+1	Ky&|	!	3	+	,	-	Up	s
+2	INu}	"*	3	1	$T
+3	IVOQ	"*	2	:4	$T
+4	INu}	V	5	1	$+
+5	IVOQ	V	4	:4	$+
+6	INu}	~	7	1	$L
+7	IVOQ	~	6	:4	$L
+8	INu}	t	9	1	$D
+9	IVOQ	t	8	:4	$D
+:	INu}	j	;	1	$<
+;	IVOQ	j	:	:4	$<
+<	INu}	`	=	1	$4
+=	IVOQ	`	<	:4	$4
+>	INu}	"4	?	1	$]
+?	IVOQ	"4	>	:5	$]
+@	INu}	">	A	1	$f
+A	IVOQ	">	@	:4	$f
+B	INu}	"R	C	1	$w
+C	IVOQ	"R	B	:4	$w
+D	INu}	"H	E	1	$o
+E	IVOQ	"H	D	:4	$o
+F	INum	.	M	1Q	#>
+G	INu}	.	K	1QN	#<
+H	INum	.	L	2Q	#=
+I	INu}	.	J	2QN	#;
+J	IVOQ	.	I	:5	#;
+K	IVOQ	.	G	:6	#<
+L	IVOA	.	H	:7	#=
+M	IVOA	.	F	:8	#>
+N	INum	L	U	1Q	$#
+O	INu}	L	S	1QN	$!
+P	INvO	L	T	2Q	$"
+Q	INu}	L	R	2QN	#~
+R	IVOQ	L	Q	:5	#~
+S	IVOQ	L	O	:6	$!
+T	L)p/	L	P	6	/	0	"	$	T	]	:7	$"
+U	IVOA	L	N	:8	$#
+V	INvO	8	]	1Q	#U
+W	INu}	8	[	1QN	#S
+X	INum	8	\	2Q	#T
+Y	INu}	8	Z	2QN	#R
+Z	IVOQ	8	Y	:5	#R
+[	IVOQ	8	W	:6	#S
+\	IVOA	8	X	:7	#T
+]	L)p/	8	V	6	/	0	"	$	T	]	:8	#U
+^	INum	B	e	1Q	#k
+_	INu}	B	c	1QN	#i
+`	INum	B	d	2Q	#j
+a	INu}	B	b	2QN	#h
+b	IVOQ	B	a	:5	#h
+c	IVOQ	B	_	:6	#i
+d	IVOA	B	`	:7	#j
+e	IVOA	B	^	:8	#k

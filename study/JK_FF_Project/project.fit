@@ -1,6 +1,6 @@
 -- MAX+plus II Compiler Fit File      
 -- Version 10.2 07/10/2002            
--- Compiled: 06/09/2018 06:10:05      
+-- Compiled: 06/09/2018 10:28:59      
 
 -- Copyright (C) 1988-2002 Altera Corporation
 -- Any megafunction design, and related net list (encrypted or decrypted),
@@ -28,12 +28,19 @@ BEGIN
     DEVICE = "EPM7032LC44-6";
 
     "CLK"                          : INPUT_PIN  = 43     ;
-    "Down"                         : INPUT_PIN  = 4      ; -- LC1
+    "Down"                         : INPUT_PIN  = 5      ; -- LC2
     "On/Off"                       : INPUT_PIN  = 1      ;
-    "Up"                           : INPUT_PIN  = 5      ; -- LC2
+    "Up"                           : INPUT_PIN  = 4      ; -- LC1
     "Q1"                           : OUTPUT_PIN = 41     ; -- LC17
-    "Q2"                           : OUTPUT_PIN = 40     ; -- LC18
-    "Q3"                           : OUTPUT_PIN = 39     ; -- LC19
+    "Q2"                           : OUTPUT_PIN = 38     ; -- LC20
+    "Q3"                           : OUTPUT_PIN = 40     ; -- LC18
+    "tp1"                          : OUTPUT_PIN = 31     ; -- LC26
+    "tp2"                          : OUTPUT_PIN = 33     ; -- LC24
+    "2CLK"                         : OUTPUT_PIN = 39     ; -- LC19
+    "4CLK"                         : OUTPUT_PIN = 34     ; -- LC23
+    "6CLK"                         : OUTPUT_PIN = 36     ; -- LC22
+    "|7476:22|:7"                  : LOCATION   = LC21   ; -- PIN 37  -- |7476:22|2Q
+    "|7476:67|:8"                  : LOCATION   = LC25   ; -- PIN 32  -- |7476:67|1Q
 
 END;
 
@@ -41,9 +48,16 @@ INTERNAL_INFO "project"
 BEGIN
 	DEVICE = EPM7032LC44-6;
 	LC17    : LORAX = "G13R0,PA7R0C1";
-	LC18    : LORAX = "G14R0,PA5R0C1";
 	LC19    : LORAX = "G15R0,PA3R0C1";
+	LC23    : LORAX = "G32R0";
+	LC24    : LORAX = "G33R0";
+	LC26    : LORAX = "G39R0";
+	LC22    : LORAX = "G31R0";
+	LC20    : LORAX = "G16R0,PA1R0C1";
+	LC18    : LORAX = "G14R0,PA5R0C1";
 	OH34R0P1 : LORAX = "G25R0,PA9R0C1";
-	OH1R0P5 : LORAX = "G44R0,PA19R0C1";
 	OH0R0P4 : LORAX = "G43R0,PA20R0C1";
+	OH1R0P5 : LORAX = "G44R0,PA19R0C1";
+	LC25    : LORAX = "G38R0,PA18R0C1";
+	LC21    : LORAX = "G30R0,PA16R0C1";
 END;
