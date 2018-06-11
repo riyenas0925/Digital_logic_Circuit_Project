@@ -1,6 +1,6 @@
 -- MAX+plus II Compiler Fit File      
 -- Version 10.2 07/10/2002            
--- Compiled: 06/11/2018 06:53:23      
+-- Compiled: 06/11/2018 08:34:42      
 
 -- Copyright (C) 1988-2002 Altera Corporation
 -- Any megafunction design, and related net list (encrypted or decrypted),
@@ -28,44 +28,40 @@ BEGIN
     DEVICE = "EPM7032LC44-6";
 
     "CLK"                          : INPUT_PIN  = 43     ;
-    "Down"                         : INPUT_PIN  = 8      ; -- LC5
+    "Down"                         : INPUT_PIN  = 5      ; -- LC2
     "On/Off"                       : INPUT_PIN  = 1      ;
-    "Rotate"                       : INPUT_PIN  = 9      ; -- LC6
-    "Up"                           : INPUT_PIN  = 4      ; -- LC1
-    "2"                            : INPUT_PIN  = 5      ; -- LC2
-    "4"                            : INPUT_PIN  = 6      ; -- LC3
-    "6"                            : INPUT_PIN  = 7      ; -- LC4
-    "ORG_Q1"                       : OUTPUT_PIN = 39     ; -- LC19
-    "ORG_Q2"                       : OUTPUT_PIN = 41     ; -- LC17
-    "ORG_Q3"                       : OUTPUT_PIN = 40     ; -- LC18
-    "Q1"                           : OUTPUT_PIN = 33     ; -- LC24
-    "Q2"                           : OUTPUT_PIN = 32     ; -- LC25
-    "Q3"                           : OUTPUT_PIN = 31     ; -- LC26
-    "2CLK"                         : OUTPUT_PIN = 36     ; -- LC22
-    "4CLK"                         : OUTPUT_PIN = 38     ; -- LC20
+    "Rotate"                       : INPUT_PIN  = 4      ; -- LC1
+    "Up"                           : INPUT_PIN  = 6      ; -- LC3
+    "CLRN"                         : OUTPUT_PIN = 29     ; -- LC27
+    "ORG_Q1"                       : OUTPUT_PIN = 38     ; -- LC20
+    "ORG_Q2"                       : OUTPUT_PIN = 40     ; -- LC18
+    "ORG_Q3"                       : OUTPUT_PIN = 41     ; -- LC17
+    "Q1"                           : OUTPUT_PIN = 31     ; -- LC26
+    "Q2"                           : OUTPUT_PIN = 33     ; -- LC24
+    "Q3"                           : OUTPUT_PIN = 34     ; -- LC23
+    "2CLK"                         : OUTPUT_PIN = 39     ; -- LC19
+    "4CLK"                         : OUTPUT_PIN = 36     ; -- LC22
     "6CLK"                         : OUTPUT_PIN = 37     ; -- LC21
-    "|7476:22|:7"                  : LOCATION   = LC23   ; -- PIN 34  -- |7476:22|2Q
+    "|7476:22|:7"                  : LOCATION   = LC25   ; -- PIN 32  -- |7476:22|2Q
 
 END;
 
 INTERNAL_INFO "project"
 BEGIN
 	DEVICE = EPM7032LC44-6;
+	LC21    : LORAX = "G30R0,PA16R0C1";
+	LC23    : LORAX = "G32R0";
+	LC24    : LORAX = "G33R0";
+	LC26    : LORAX = "G39R0";
+	LC19    : LORAX = "G15R0,PA3R0C1";
 	LC22    : LORAX = "G31R0";
-	LC21    : LORAX = "G30R0";
-	LC20    : LORAX = "G16R0";
 	LC18    : LORAX = "G14R0,PA5R0C1";
 	LC17    : LORAX = "G13R0,PA7R0C1";
-	LC19    : LORAX = "G15R0,PA3R0C1";
-	LC26    : LORAX = "G39R0";
-	LC25    : LORAX = "G38R0";
-	LC24    : LORAX = "G33R0";
-	OH1R0P5 : LORAX = "G44R0,PA19R0C1";
-	OH3R0P7 : LORAX = "G46R0,PA24R0C1";
-	OH2R0P6 : LORAX = "G45R0,PA22R0C1";
-	OH34R0P1 : LORAX = "G25R0,PA9R0C1";
+	LC20    : LORAX = "G16R0,PA1R0C1";
+	LC27    : LORAX = "G40R0";
 	OH0R0P4 : LORAX = "G43R0,PA20R0C1";
-	OH4R0P8 : LORAX = "G60R0,PA29R0C1";
-	LC23    : LORAX = "G32R0,PA12R0C1";
-	OH5R0P9 : LORAX = "G61R0,PA28R0C1";
+	OH1R0P5 : LORAX = "G44R0,PA19R0C1";
+	OH2R0P6 : LORAX = "G45R0,PA22R0C1";
+	LC25    : LORAX = "G38R0,PA18R0C1";
+	OH34R0P1 : LORAX = "G25R0,PA9R0C1";
 END;
