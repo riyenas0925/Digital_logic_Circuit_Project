@@ -1,24 +1,24 @@
 NDB006
 The number of symbol table entries is: 15
-The length of the symbol table is: 159
+The length of the symbol table is: 160
 
 Index Hierarchy Path
 ----- --------------
 !	&null_hpath&
 .	|7476:225|
-9	|7476:22|
-C	|7476:21|
-M	|7408:233|
-X	|7408:62|
-b	|7408:60|
-l	|7408:58|
-v	|7408:25|
-""	|7432:65|
-",	|7432:64|
-"6	|7432:66|
-"@	|74157:208|
-"L	|7474:231|
-"W	|7474:230|
+9	|7476:239|
+D	|7476:22|
+N	|7408:233|
+Y	|7408:62|
+c	|7408:60|
+m	|7408:58|
+w	|7408:25|
+"#	|7432:65|
+"-	|7432:64|
+"7	|7432:66|
+"A	|74157:208|
+"M	|7474:231|
+"X	|7474:230|
 
 The number of name info structs is : 97
 
@@ -34,90 +34,90 @@ $	V$IO	!	2	3	b	1	1	6CLK	t
 )	IGdW	!	:234	#=
 *	IGdW	!	:235	#;
 +	IGdW	!	:236	#<
-,	(@>U^	!	9	$	"	#	1	2	0	_	b	"#	CLK	s
+,	(@>U^	!	9	$	"	#	1	2	0	_	b	y	CLK	s
 -	IGdq	!	CLRN	}
 .	Ky&|	!	9	-	0	1	2	"	#	$	b	_	Down	o
-/	(@>U^	!	4	0	1	2	"#	On/Off	p
+/	(@>U^	!	4	0	1	2	y	On/Off	p
 0	Ky&}	!	3	0	1	3	ORG_Q1	y
 1	Ky&}	!	4	0	1	2	4	ORG_Q2	w
 2	Ky&}	!	4	0	1	2	5	ORG_Q3	x
 3	IGdq	!	Q1	{
 4	IGdq	!	Q2	|
 5	IGdq	!	Q3	z
-6	Ky&|	!	7	-	"	#	$	b	_	"#	Rotate	r
+6	Ky&|	!	7	-	"	#	$	b	_	y	Rotate	r
 7	Ky&|	!	9	-	0	1	2	"	#	$	b	_	Up	q
-8	INu}	M	9	1	$,
-9	IVOQ	M	8	:4	$,
-:	INu}	v	;	1	$M
-;	IVOQ	v	:	:4	$M
-<	INu}	l	=	1	$E
-=	IVOQ	l	<	:4	$E
->	INu}	b	?	1	$=
-?	IVOQ	b	>	:4	$=
-@	INu}	X	A	1	$5
-A	IVOQ	X	@	:4	$5
-B	IGdW	"@	:1	%)
-C	IGdW	"@	:12	%(
-D	IGdW	"@	:13	%'
-E	IGdW	"@	:14	%&
-F	IGdW	"@	:15	%%
-G	IGdW	"@	:16	%$
-H	IGdW	"@	:17	%#
-I	IGdW	"@	:18	%"
-J	IGdW	"@	:19	%!
-K	IGdW	"@	:20	$~
-L	IGdW	"@	:21	$}
-M	IVOQ	"@	Q	:22	$|
-N	IVOQ	"@	R	:23	${
-O	IVOQ	"@	S	:24	$z
-P	IVOQ	"@	T	:25	$y
-Q	INu}	"@	M	Y1	$|
-R	INu}	"@	N	Y2	${
-S	INu}	"@	O	Y3	$z
-T	INu}	"@	P	Y4	$y
-U	INu}	",	V	1	$^
-V	IVOQ	",	U	:4	$^
-W	INu}	""	X	1	$U
-X	IVOQ	""	W	:4	$U
-Y	INu}	"6	Z	1	$f
-Z	IVOQ	"6	Y	:4	$f
-[	INvO	"W	b	1Q	%P
-\	INu}	"W	a	1QN	%S
-]	INvO	"W	_	2Q	%Q
-^	INu}	"W	`	2QN	%R
-_	V34_	"W	]	1	$	1	1	:10	%Q
-`	IVOQ	"W	^	:15	%R
-a	IVOQ	"W	\	:16	%S
-b	V34_	"W	[	1	_	1	1	:9	%P
-c	INum	"L	j	1Q	%;
-d	INu}	"L	i	1QN	%>
-e	INum	"L	g	2Q	%<
-f	INu}	"L	h	2QN	%=
-g	IVOA	"L	e	:10	%<
-h	IVOQ	"L	f	:15	%=
-i	IVOQ	"L	d	:16	%>
-j	IVOA	"L	c	:9	%;
-k	INum	C	r	1Q	$$
-l	INu}	C	p	1QN	$"
-m	INum	C	q	2Q	$#
-n	INu}	C	o	2QN	$!
-o	IVOQ	C	n	:5	$!
-p	IVOQ	C	l	:6	$"
-q	IVOA	C	m	:7	$#
-r	IVOA	C	k	:8	$$
-s	INum	.	z	1Q	#U
-t	INu}	.	x	1QN	#S
-u	INum	.	y	2Q	#T
-v	INu}	.	w	2QN	#R
-w	IVOQ	.	v	:5	#R
-x	IVOQ	.	t	:6	#S
-y	IVOA	.	u	:7	#T
-z	IVOA	.	s	:8	#U
+8	INu}	N	9	1	$,
+9	IVOQ	N	8	:4	$,
+:	INu}	w	;	1	$M
+;	IVOQ	w	:	:4	$M
+<	INu}	m	=	1	$E
+=	IVOQ	m	<	:4	$E
+>	INu}	c	?	1	$=
+?	IVOQ	c	>	:4	$=
+@	INu}	Y	A	1	$5
+A	IVOQ	Y	@	:4	$5
+B	IGdW	"A	:1	%)
+C	IGdW	"A	:12	%(
+D	IGdW	"A	:13	%'
+E	IGdW	"A	:14	%&
+F	IGdW	"A	:15	%%
+G	IGdW	"A	:16	%$
+H	IGdW	"A	:17	%#
+I	IGdW	"A	:18	%"
+J	IGdW	"A	:19	%!
+K	IGdW	"A	:20	$~
+L	IGdW	"A	:21	$}
+M	IVOQ	"A	Q	:22	$|
+N	IVOQ	"A	R	:23	${
+O	IVOQ	"A	S	:24	$z
+P	IVOQ	"A	T	:25	$y
+Q	INu}	"A	M	Y1	$|
+R	INu}	"A	N	Y2	${
+S	INu}	"A	O	Y3	$z
+T	INu}	"A	P	Y4	$y
+U	INu}	"-	V	1	$^
+V	IVOQ	"-	U	:4	$^
+W	INu}	"#	X	1	$U
+X	IVOQ	"#	W	:4	$U
+Y	INu}	"7	Z	1	$f
+Z	IVOQ	"7	Y	:4	$f
+[	INvO	"X	b	1Q	%P
+\	INu}	"X	a	1QN	%S
+]	INvO	"X	_	2Q	%Q
+^	INu}	"X	`	2QN	%R
+_	V34_	"X	]	1	$	1	1	:10	%Q
+`	IVOQ	"X	^	:15	%R
+a	IVOQ	"X	\	:16	%S
+b	V34_	"X	[	1	_	1	1	:9	%P
+c	INum	"M	j	1Q	%;
+d	INu}	"M	i	1QN	%>
+e	INum	"M	g	2Q	%<
+f	INu}	"M	h	2QN	%=
+g	IVOA	"M	e	:10	%<
+h	IVOQ	"M	f	:15	%=
+i	IVOQ	"M	d	:16	%>
+j	IVOA	"M	c	:9	%;
+k	INum	.	r	1Q	#U
+l	INu}	.	p	1QN	#S
+m	INum	.	q	2Q	#T
+n	INu}	.	o	2QN	#R
+o	IVOQ	.	n	:5	#R
+p	IVOQ	.	l	:6	#S
+q	IVOA	.	m	:7	#T
+r	IVOA	.	k	:8	#U
+s	INum	D	z	1Q	$$
+t	INu}	D	x	1QN	$"
+u	INvO	D	y	2Q	$#
+v	INu}	D	w	2QN	$!
+w	IVOQ	D	v	:5	$!
+x	IVOQ	D	t	:6	$"
+y	L)p/	D	u	4	3	4	5	y	:7	$#
+z	IVOA	D	s	:8	$$
 {	INum	9	"$	1Q	#l
 |	INu}	9	""	1QN	#j
-}	INvO	9	"#	2Q	#k
+}	INum	9	"#	2Q	#k
 ~	INu}	9	"!	2QN	#i
 "!	IVOQ	9	~	:5	#i
 ""	IVOQ	9	|	:6	#j
-"#	L)p/	9	}	4	3	4	5	"#	:7	#k
+"#	IVOA	9	}	:7	#k
 "$	IVOA	9	{	:8	#l

@@ -2,7 +2,7 @@ Project Informatione:\digital_logic_circuit_project\study\jk_ff_project\project.
 
 MAX+plus II Compiler Report File
 Version 10.2 07/10/2002
-Compiled: 06/15/2018 08:40:19
+Compiled: 06/11/2018 22:49:28
 
 Copyright (C) 1988-2002 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -66,8 +66,8 @@ Project Informatione:\digital_logic_circuit_project\study\jk_ff_project\project.
 
 
 |7476:225|
-|7476:239|
 |7476:22|
+|7476:21|
 |7408:233|
 |7408:62|
 |7408:60|
@@ -208,8 +208,8 @@ project
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
   28     28    B     OUTPUT      t        0      0   0    3    0    0    0  CLRN
   36     22    B         FF   +  t        0      0   0    3    3    3    0  ORG_Q1 (|7476:22|:8)
-  38     20    B         FF   +  t        0      0   0    3    3    4    0  ORG_Q2 (|7476:239|:7)
-  40     18    B         FF   +  t        0      0   0    3    2    4    0  ORG_Q3 (|7476:239|:8)
+  38     20    B         FF   +  t        0      0   0    3    3    4    0  ORG_Q2 (|7476:21|:7)
+  40     18    B         FF   +  t        0      0   0    3    2    4    0  ORG_Q3 (|7476:21|:8)
   27     29    B     OUTPUT      t        0      0   0    0    3    0    0  Q1
   31     26    B     OUTPUT      t        0      0   0    0    3    0    0  Q2
   32     25    B     OUTPUT      t        0      0   0    0    3    0    0  Q3
@@ -320,7 +320,7 @@ Up       : INPUT;
          #  Down &  ORG_Q2
          #  Down &  ORG_Q1;
 
--- Node name is 'ORG_Q2' = '|7476:239|2Q' 
+-- Node name is 'ORG_Q2' = '|7476:21|2Q' 
 -- Equation name is 'ORG_Q2', type is output 
  ORG_Q2  = TFFE( _EQ003, GLOBAL( CLK), GLOBAL( On/Off),  VCC,  VCC);
   _EQ003 =  On/Off &  ORG_Q1 &  Up
@@ -328,7 +328,7 @@ Up       : INPUT;
          #  Down &  ORG_Q3
          #  Down &  ORG_Q2;
 
--- Node name is 'ORG_Q3' = '|7476:239|1Q' 
+-- Node name is 'ORG_Q3' = '|7476:21|1Q' 
 -- Equation name is 'ORG_Q3', type is output 
  ORG_Q3  = TFFE( _EQ004, GLOBAL( CLK), GLOBAL( On/Off),  VCC,  VCC);
   _EQ004 =  On/Off &  ORG_Q2 & !ORG_Q3 &  Up
@@ -470,15 +470,15 @@ Compilation Times
    Compiler Netlist Extractor             00:00:00
    Database Builder                       00:00:00
    Logic Synthesizer                      00:00:00
-   Partitioner                            00:00:01
+   Partitioner                            00:00:00
    Fitter                                 00:00:00
    Timing SNF Extractor                   00:00:00
    Assembler                              00:00:00
    --------------------------             --------
-   Total Time                             00:00:01
+   Total Time                             00:00:00
 
 
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 2,830K
+Peak memory allocated during compilation  = 3,004K
